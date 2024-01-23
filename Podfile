@@ -5,7 +5,7 @@ target 'GithubActions11' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for GithubActions11
+  pod 'Firebase/Core', '8.8.0'
 
   target 'GithubActions11Tests' do
     inherit! :search_paths
