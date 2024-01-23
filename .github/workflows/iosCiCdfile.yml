@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build-and-release:
-    runs-on: mac-mini-ios-sh-1
+    runs-on:  macos-12 #mac-mini-ios-sh-1
     steps:
     - name: Checkout ${{ github.ref_name }}
       uses: actions/checkout@v4
