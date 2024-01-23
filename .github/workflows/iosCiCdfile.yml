@@ -1,0 +1,17 @@
+name: Build and Release
+on:
+  push:
+    branches:
+      - manage-beneficiaries-feature
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  build-and-release:
+    runs-on: mac-mini-ios-sh-1
+    steps:
+    - name: Checkout ${{ github.ref_name }}
+      uses: actions/checkout@v4
+
