@@ -6,6 +6,11 @@ target 'GithubActions11' do
   use_frameworks!
 
   pod 'Firebase/Core', '8.8.0'
+  pod 'Firebase/Messaging', '8.8.0'
+  pod 'Firebase/Analytics', '8.8.0'
+  pod 'Firebase/Performance', '8.8.0'
+  pod 'FirebaseAuth', '8.8.0'
+  pod 'Firebase/Crashlytics', '8.8.0'
 
   target 'GithubActions11Tests' do
     inherit! :search_paths
