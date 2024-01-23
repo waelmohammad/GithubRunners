@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1228C7C5FFED964CFA2EBD22 /* Pods_GithubActions11.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCBDC6A9315BD122EE6E6616 /* Pods_GithubActions11.framework */; };
 		54AC5F259365257E2CE28DA2 /* Pods_GithubActions11Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DB56AD2F4C36EADD967E7F /* Pods_GithubActions11Tests.framework */; };
 		6E84A8EA60BE0C1ADD1836F0 /* Pods_GithubActions11_GithubActions11UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38A5FE4A7CF8A14B2AD6A5E /* Pods_GithubActions11_GithubActions11UITests.framework */; };
 		83E31C282B60329500EB986F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E31C272B60329500EB986F /* AppDelegate.swift */; };
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1228C7C5FFED964CFA2EBD22 /* Pods_GithubActions11.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83E31C4E2B60329C00EB986F /* Build configuration list for PBXNativeTarget "GithubActions11" */;
 			buildPhases = (
+				A08977A7D0EB4DBD74D521E4 /* [CP] Check Pods Manifest.lock */,
 				83E31C202B60329500EB986F /* Sources */,
 				83E31C212B60329500EB986F /* Frameworks */,
 				83E31C222B60329500EB986F /* Resources */,
+				1F2B180147FB4B3C1F782A00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +321,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1F2B180147FB4B3C1F782A00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubActions11/Pods-GithubActions11-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubActions11/Pods-GithubActions11-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubActions11/Pods-GithubActions11-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		63A8E371C5F5424AD40DE424 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +354,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GithubActions11Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08977A7D0EB4DBD74D521E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubActions11-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
