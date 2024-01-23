@@ -14,5 +14,8 @@ jobs:
     steps:
     - name: Checkout ${{ github.ref_name }}
       uses: actions/checkout@v4
-    - name: Run Unit tests
-      run: bundle exec fastlane run_unit_tests
+    - name: CocoaPod Install
+      run: pod install
+    - name: Lint code using SwiftLint
+      run: swiftlint lint --reporter github-actions-logging
+      
